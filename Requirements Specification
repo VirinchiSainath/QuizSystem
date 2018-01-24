@@ -1,0 +1,21 @@
+Actors: Professor, Student
+
+Usecases:
+
+Professor
+  - login/logout 
+  - registration - id, First Name, Last Name, email, username, password
+  - student CRUD (Create, Read, Update, Delete) - id, First Name, Last Name, email, username, password
+  - Quiz CRUD - id, Name, No. of Questions, Duration, show answers
+         Question - id, quizid, description
+         Answer - id, questionid, answer 
+  - Register student for a quiz - registration - id, quizid, studentid, date, score, status
+  - Dashboard - Quizzes created - id, Quiz Name, No. of students, Max Score, Min Score
+                View Entry - id, Name, 
+                			studentid, First Name, Last Name, Score
+  
+ Student:
+ - login/logout
+ - Take quiz - studentresponses - id,question id, student id, answers
+ - View result
+ - Dashboard - id, quiz, Max score, Secured score
